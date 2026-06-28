@@ -85,18 +85,16 @@ app.use(error);
    
 // Cargar los certificados de Let's Encrypt
 // solo para produccion. 
-/* 
+
 const options = {
     key: fs.readFileSync(path.join('/etc/letsencrypt/live/srv743626.hstgr.cloud/privkey.pem')),
     cert: fs.readFileSync(path.join('/etc/letsencrypt/live/srv743626.hstgr.cloud/fullchain.pem')),
   };
-  
 
   // Crear el servidor HTTPS
-  https.createServer(options, app).listen(443,'0.0.0.0', () => {
-    console.log('Servidor HTTPS escuchando en el puerto 443 ');
+  https.createServer(options, app).listen(4005,'0.0.0.0', () => {
+    console.log('Servidor HTTPS escuchando en el puerto 4005 ');
   });  
   
- */
 
 module.exports =app;
